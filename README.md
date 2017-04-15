@@ -1,11 +1,13 @@
 # api documentation for  [liftoff (v2.3.0)](https://github.com/js-cli/js-liftoff)  [![npm package](https://img.shields.io/npm/v/npmdoc-liftoff.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-liftoff) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-liftoff.svg)](https://travis-ci.org/npmdoc/node-npmdoc-liftoff)
 #### Launch your command line tool with ease.
 
-[![NPM](https://nodei.co/npm/liftoff.png?downloads=true)](https://www.npmjs.com/package/liftoff)
+[![NPM](https://nodei.co/npm/liftoff.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/liftoff)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-liftoff/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-liftoff_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-liftoff/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-liftoff/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-liftoff/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-liftoff/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-liftoff/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-liftoff/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
@@ -59,25 +61,20 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "jonschlinkert",
-            "email": "github@sellside.com"
+            "name": "jonschlinkert"
         },
         {
-            "name": "phated",
-            "email": "blaine.bublitz@gmail.com"
+            "name": "phated"
         },
         {
-            "name": "tkellen",
-            "email": "tyler@sleekcode.net"
+            "name": "tkellen"
         },
         {
-            "name": "tusbar",
-            "email": "bertrand.marron@gmail.com"
+            "name": "tusbar"
         }
     ],
     "name": "liftoff",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/js-cli/js-liftoff.git"
@@ -94,17 +91,44 @@
 # <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
 
 #### [module liftoff](#apidoc.module.liftoff)
+1.  [function <span class="apidocSignatureSpan"></span>liftoff (opts)](#apidoc.element.liftoff.liftoff)
 1.  [function <span class="apidocSignatureSpan">liftoff.</span>super_ ()](#apidoc.element.liftoff.super_)
+1.  [function <span class="apidocSignatureSpan">liftoff.</span>toString ()](#apidoc.element.liftoff.toString)
 
 
 
 # <a name="apidoc.module.liftoff"></a>[module liftoff](#apidoc.module.liftoff)
+
+#### <a name="apidoc.element.liftoff.liftoff"></a>[function <span class="apidocSignatureSpan"></span>liftoff (opts)](#apidoc.element.liftoff.liftoff)
+- description and source-code
+```javascript
+function Liftoff(opts) {
+  EE.call(this);
+  extend(this, parseOptions(opts));
+}
+```
+- example usage
+```shell
+n/a
+```
 
 #### <a name="apidoc.element.liftoff.super_"></a>[function <span class="apidocSignatureSpan">liftoff.</span>super_ ()](#apidoc.element.liftoff.super_)
 - description and source-code
 ```javascript
 function EventEmitter() {
   EventEmitter.init.call(this);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.liftoff.toString"></a>[function <span class="apidocSignatureSpan">liftoff.</span>toString ()](#apidoc.element.liftoff.toString)
+- description and source-code
+```javascript
+toString = function () {
+    return toString;
 }
 ```
 - example usage
