@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/js-cli/js-liftoff"
-
-    >liftoff (v2.3.0)</a>
+    <a href="https://github.com/js-cli/js-liftoff">liftoff (v2.3.0)</a>
 </h1>
 <h4>Launch your command line tool with ease.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.liftoff">module liftoff</a><ol>
 
@@ -267,7 +260,7 @@
     <li>description and source-code<pre class="apidocCodePre">file_search = function (search, paths) {
   var path;
   var len = paths.length;
-  for (var i = 0; i &#x3c; len; i++) {
+  for (var i = 0; i &lt; len; i++) {
     if (path) {
       break;
     } else {
@@ -293,13 +286,13 @@
   var configNameSearch = opts.configNameSearch;
   var configPath = opts.configPath;
   var searchPaths = opts.searchPaths;
-  // only search for a config if a path to one wasn&#x27;t explicitly provided
+  // only search for a config if a path to one wasn't explicitly provided
   if (!configPath) {
     if (!Array.isArray(searchPaths)) {
-      throw new Error(&#x27;Please provide an array of paths to search for config in.&#x27;);
+      throw new Error('Please provide an array of paths to search for config in.');
     }
     if (!configNameSearch) {
-      throw new Error(&#x27;Please provide a configNameSearch.&#x27;);
+      throw new Error('Please provide a configNameSearch.');
     }
     configPath = fileSearch(configNameSearch, searchPaths);
   }
@@ -329,10 +322,10 @@
   var configPath = opts.configPath;
   // if a path to the desired config was specified
   // but no cwd was provided, use configPath dir
-  if (typeof configPath === &#x27;string&#x27; &#x26;&#x26; !cwd) {
+  if (typeof configPath === 'string' &amp;&amp; !cwd) {
     cwd = path.dirname(path.resolve(configPath));
   }
-  if (typeof cwd === &#x27;string&#x27;) {
+  if (typeof cwd === 'string') {
     return path.resolve(cwd);
   }
   return process.cwd();
@@ -352,8 +345,8 @@
     <li>description and source-code<pre class="apidocCodePre">parse_options = function (opts) {
   var defaults = {
     extensions: {
-      &#x27;.js&#x27;: null,
-      &#x27;.json&#x27;: null
+      '.js': null,
+      '.json': null
     },
     searchPaths: []
   };
@@ -365,20 +358,20 @@
       opts.processTitle = opts.name;
     }
     if (!opts.configName) {
-      opts.configName = opts.name + &#x27;file&#x27;;
+      opts.configName = opts.name + 'file';
     }
     if (!opts.moduleName) {
       opts.moduleName = opts.name;
     }
   }
   if (!opts.processTitle) {
-    throw new Error(&#x27;You must specify a processTitle.&#x27;);
+    throw new Error('You must specify a processTitle.');
   }
   if (!opts.configName) {
-    throw new Error(&#x27;You must specify a configName.&#x27;);
+    throw new Error('You must specify a configName.');
   }
   if (!opts.moduleName) {
-    throw new Error(&#x27;You must specify a moduleName.&#x27;);
+    throw new Error('You must specify a moduleName.');
   }
   return extend(defaults, opts);
 }</pre></li>
@@ -409,9 +402,9 @@
   if (Array.isArray(autoloads)) {
     autoloads.forEach(function (attempt) {
       if (attempt.error) {
-        eventEmitter.emit(&#x27;requireFail&#x27;, attempt.moduleName, attempt.error);
+        eventEmitter.emit('requireFail', attempt.moduleName, attempt.error);
       } else {
-        eventEmitter.emit(&#x27;require&#x27;, attempt.moduleName, attempt.module);
+        eventEmitter.emit('require', attempt.moduleName, attempt.module);
       }
     });
   }
@@ -483,7 +476,7 @@
     <li>description and source-code<pre class="apidocCodePre">file_search = function (search, paths) {
   var path;
   var len = paths.length;
-  for (var i = 0; i &#x3c; len; i++) {
+  for (var i = 0; i &lt; len; i++) {
     if (path) {
       break;
     } else {
@@ -514,13 +507,13 @@
   var configNameSearch = opts.configNameSearch;
   var configPath = opts.configPath;
   var searchPaths = opts.searchPaths;
-  // only search for a config if a path to one wasn&#x27;t explicitly provided
+  // only search for a config if a path to one wasn't explicitly provided
   if (!configPath) {
     if (!Array.isArray(searchPaths)) {
-      throw new Error(&#x27;Please provide an array of paths to search for config in.&#x27;);
+      throw new Error('Please provide an array of paths to search for config in.');
     }
     if (!configNameSearch) {
-      throw new Error(&#x27;Please provide a configNameSearch.&#x27;);
+      throw new Error('Please provide a configNameSearch.');
     }
     configPath = fileSearch(configNameSearch, searchPaths);
   }
@@ -555,10 +548,10 @@
   var configPath = opts.configPath;
   // if a path to the desired config was specified
   // but no cwd was provided, use configPath dir
-  if (typeof configPath === &#x27;string&#x27; &#x26;&#x26; !cwd) {
+  if (typeof configPath === 'string' &amp;&amp; !cwd) {
     cwd = path.dirname(path.resolve(configPath));
   }
-  if (typeof cwd === &#x27;string&#x27;) {
+  if (typeof cwd === 'string') {
     return path.resolve(cwd);
   }
   return process.cwd();
@@ -583,8 +576,8 @@
     <li>description and source-code<pre class="apidocCodePre">parse_options = function (opts) {
   var defaults = {
     extensions: {
-      &#x27;.js&#x27;: null,
-      &#x27;.json&#x27;: null
+      '.js': null,
+      '.json': null
     },
     searchPaths: []
   };
@@ -596,20 +589,20 @@
       opts.processTitle = opts.name;
     }
     if (!opts.configName) {
-      opts.configName = opts.name + &#x27;file&#x27;;
+      opts.configName = opts.name + 'file';
     }
     if (!opts.moduleName) {
       opts.moduleName = opts.name;
     }
   }
   if (!opts.processTitle) {
-    throw new Error(&#x27;You must specify a processTitle.&#x27;);
+    throw new Error('You must specify a processTitle.');
   }
   if (!opts.configName) {
-    throw new Error(&#x27;You must specify a configName.&#x27;);
+    throw new Error('You must specify a configName.');
   }
   if (!opts.moduleName) {
-    throw new Error(&#x27;You must specify a moduleName.&#x27;);
+    throw new Error('You must specify a moduleName.');
   }
   return extend(defaults, opts);
 }</pre></li>
@@ -645,9 +638,9 @@
   if (Array.isArray(autoloads)) {
     autoloads.forEach(function (attempt) {
       if (attempt.error) {
-        eventEmitter.emit(&#x27;requireFail&#x27;, attempt.moduleName, attempt.error);
+        eventEmitter.emit('requireFail', attempt.moduleName, attempt.error);
       } else {
-        eventEmitter.emit(&#x27;require&#x27;, attempt.moduleName, attempt.module);
+        eventEmitter.emit('require', attempt.moduleName, attempt.module);
       }
     });
   }
@@ -704,3 +697,4 @@
     ]
 </div>
 </div>
+</body></html>
