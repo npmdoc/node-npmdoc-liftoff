@@ -3,7 +3,9 @@
 
 [![NPM](https://nodei.co/npm/liftoff.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/liftoff)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-liftoff/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-liftoff/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-liftoff/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-liftoff/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-liftoff/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-liftoff/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-liftoff/build/screenCapture.npmPackageListing.svg)
 
@@ -84,56 +86,6 @@
     },
     "version": "2.3.0"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module liftoff](#apidoc.module.liftoff)
-1.  [function <span class="apidocSignatureSpan"></span>liftoff (opts)](#apidoc.element.liftoff.liftoff)
-1.  [function <span class="apidocSignatureSpan">liftoff.</span>super_ ()](#apidoc.element.liftoff.super_)
-1.  [function <span class="apidocSignatureSpan">liftoff.</span>toString ()](#apidoc.element.liftoff.toString)
-
-
-
-# <a name="apidoc.module.liftoff"></a>[module liftoff](#apidoc.module.liftoff)
-
-#### <a name="apidoc.element.liftoff.liftoff"></a>[function <span class="apidocSignatureSpan"></span>liftoff (opts)](#apidoc.element.liftoff.liftoff)
-- description and source-code
-```javascript
-function Liftoff(opts) {
-  EE.call(this);
-  extend(this, parseOptions(opts));
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.liftoff.super_"></a>[function <span class="apidocSignatureSpan">liftoff.</span>super_ ()](#apidoc.element.liftoff.super_)
-- description and source-code
-```javascript
-function EventEmitter() {
-  EventEmitter.init.call(this);
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.liftoff.toString"></a>[function <span class="apidocSignatureSpan">liftoff.</span>toString ()](#apidoc.element.liftoff.toString)
-- description and source-code
-```javascript
-toString = function () {
-    return toString;
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
