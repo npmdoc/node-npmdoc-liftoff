@@ -1,4 +1,7 @@
-# api documentation for  [liftoff (v2.3.0)](https://github.com/js-cli/js-liftoff)  [![npm package](https://img.shields.io/npm/v/npmdoc-liftoff.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-liftoff) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-liftoff.svg)](https://travis-ci.org/npmdoc/node-npmdoc-liftoff)
+# npmdoc-liftoff
+
+#### basic api documentation for  [liftoff (v2.3.0)](https://github.com/js-cli/js-liftoff)  [![npm package](https://img.shields.io/npm/v/npmdoc-liftoff.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-liftoff) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-liftoff.svg)](https://travis-ci.org/npmdoc/node-npmdoc-liftoff)
+
 #### Launch your command line tool with ease.
 
 [![NPM](https://nodei.co/npm/liftoff.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/liftoff)
@@ -84,7 +87,8 @@
     "scripts": {
         "test": "jshint lib index.js && jscs lib index.js && mocha -t 5000 -b -R spec test/index"
     },
-    "version": "2.3.0"
+    "version": "2.3.0",
+    "bin": {}
 }
 ```
 
